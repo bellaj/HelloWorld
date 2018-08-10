@@ -31,6 +31,12 @@ scrypt = bitcoin.script.compile([bitcoin.opcodes.OP_RETURN,data]);
 RawTransaction.addOutput(scrypt, 0);
 var keyPair = bitcoin.ECPair.fromWIF(privateKey, testnet);
 RawTransaction.sign(0, keyPair)
+    
+/* For P2SH transaction use the following code instead the previous line. Make sure that the source address is a P2SH address
+const p2wpkh = bitcoin.payments.p2wpkh({ pubkey: keyPair.publicKey, network: bitcoin.networks.testnet })
+const p2sh = bitcoin.payments.p2sh({ redeem: p2wpkh, network: bitcoin.networks.testnet })
+RawTransaction.sign(0, keyPair, p2sh.redeem.output, null, parseInt(amount))
+*/
 var Transaction=RawTransaction.build().toHex();
  
 
