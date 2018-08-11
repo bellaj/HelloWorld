@@ -3,7 +3,7 @@
 The code for the first chapter of the book : Blockchain by Example.
 
 ## instructions : <br>
-**Firstly** : send some bitcoins from a faucet website to ```n3CKupfRCJ6Bnmr78mw9eyeszUSkfyHcPy``` <br>
+**Firstly** : send some bitcoins from a [faucet website](https://testnet.manu.backend.hamburg/faucet) to ```n3CKupfRCJ6Bnmr78mw9eyeszUSkfyHcPy``` <br>
 **Secondly** : run ```node hello.js``` <br><br>
 ![](https://preview.ibb.co/jckrkp/nodejshello.png)
 
