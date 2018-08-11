@@ -2,12 +2,17 @@
 
 The code for the first chapter of the book : Blockchain by Example.
 
+## instructions : <br>
+**Firstly** : send some bitcoins from a faucet website to ```n3CKupfRCJ6Bnmr78mw9eyeszUSkfyHcPy``` <br>
+**Secondly** : run ```node hello.js``` <br><br>
 ![](https://preview.ibb.co/jckrkp/nodejshello.png)
 
+## P2SH or P2PKH : <br>
 you can use https://testnet.blockexplorer.com/api/txs/?address=2MsHsi4CHXsaNZSq5krnrpP4WShNgtuRa9U
-to determine online whether the transaction is P2SH or P2PKH
+to determine online whether the transaction output is a P2SH or P2PKH
 
 ![](https://image.ibb.co/gLiBkp/scripttype.png)
+
 
 or by using https://api.blockcypher.com/v1/btc/test3/txs/0791521362528725683caedf998006cf68b1cd817be1694ef0daca265d9b4252?limit=50&includeHex=true
 
